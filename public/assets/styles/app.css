@@ -1,0 +1,113 @@
+@font-face{
+    font-family: Roboto;
+    src: url('../font_roboto/Roboto-Bold.ttf');
+}
+.layout{
+    font-family: Roboto, serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    width: 700px;
+    height: 753px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 389px;
+    height: 178.25px;
+}
+.chapo{
+    /* Chapo */
+    width: 700px;
+    height: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+.form-group{
+    width: 270px;
+    height: 70px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.label{
+    width: 270px;
+    height: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+.label.required:after {
+    content:" *";
+    color: red;
+}
+.input{
+
+    width: 270px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+.submit-button{
+    width: 350px;
+    height: 40px;
+    background: #DB6708;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.p5{
+    padding: 5px;
+}
+/* The alert message box */
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+    width: 25%;
+}
+.alert-danger{
+    background-color: #f44336; /* Red */
+}
+.alert-success{
+    background-color: #3d9b11; /* Green */
+}
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}

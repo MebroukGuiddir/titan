@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Newsletter{% endblock %}
+
+{% block body %}
+    <div class="layout">
+
+        {% if  submitted == true %}
+        {% if status == true  %}
+            <div class="alert alert-success">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                 {{ message }}
+            </div>
+        {% else %}
+            <div class="alert alert-danger">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                {{ message }}
+            </div>
+        {% endif %}
+        {% endif %}
+        <form class="page" id="registration" action="/newsletter/inscription" method="get">
+            <img class="logo" src="{{ asset('assets/logo.jpg') }}">
+
+            <p class="chapo">Inscrivez-vous pour faire partie des premiers touristes de Titan, la Fameuse lune de Saturne! </p>
+            <div class="form-group">
+                <label for="input-prenom" class="label  required" id="label-prenom" >Prénom</label>
+                <input  name="lastName" class="input" id="lastName" >
+            </div>
+            <div class="form-group p5">
+                <label for="input-nom" class="label required" id="label-nom"  >Nom</label>
+                <input  name="firstName" class="input" id="firstName" >
+
+            </div>
+            <div class="form-group p5">
+                <label for="input-email" class="label  required" id="label-email"  >Email</label>
+                <input  name="email" class="input" id="email">
+
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="accept" name="accept">
+                <label for="accept">J'accepte de m'inscrire à la newsletter de Titan</label>
+            </div>
+
+            <input type="submit" class="submit-button" id="submit" value="VALIDER MON INSCRIPTION">
+        </form>
+
+
+    </div>
+{% endblock %}
